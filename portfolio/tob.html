@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Navbar</title>
+	<style type="text/css">
+		*{
+           box-sizing: border-box;
+		}
+		.gallery{
+			border:1px solid #ccc;
+		}
+		.gallery img{
+			width: 100%;
+			height: auto;
+		}
+		.des{
+			padding: 15px;
+			text-align: center;
+			font-weight: 60px;
+		}
+		.responsive{
+			padding: 0 20px;
+			float: left;
+			width: 300px;
+		}
+		@media only screen and (max-width: 700px){
+			.responsive{
+				width: 100px;
+				
+			}
+			@media only screen and (max-width: 500px){
+			.responsive{
+				width: 50px;
+				margin: 6px 0;
+			}
+	}
+		</style>
+	<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+	<h1>Job Title</h1>
+      <div class="responsive">
+      	<div class="gallery">
+                <a href="tc.jpg" target="_blank"><img src="tc.jpg" width="300" height="200"></a>
+                <div class="des"><h3>Placed in TCS<a href="https://www.glassdoor.co.in/Overview/Working-at-TCS-EI_IE959059.11,14.htm">Know</a></h3></div>
+  </div>
+</div>
+<div class="responsive">
+      	<div class="gallery">
+                <a href="ibm.jpg" target="_blank"><img src="ibm.jpg" width="300" height="200"></a>
+                <div class="des"><h3>Placed in IBM <a href="https://www.glassdoor.co.in/Overview/Working-at-IBM-EI_IE354.11,14.htm">Know</a></h3></div>
+  </div>
+</div>
+<div class="responsive">
+      	<div class="gallery">
+                <a href="infy.jpg" target="_blank"><img src="infy.jpg" width="300" height="200"></a>
+                <div class="des"><h3>Placed in Infinity<a href="https://www.glassdoor.co.in/Reviews/Infinity-Solutions-Reviews-E289356.htm">Know</a></h3></div>
+  </div>
+</div>
+</body>
+</html>
